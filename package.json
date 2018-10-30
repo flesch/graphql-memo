@@ -1,0 +1,49 @@
+{
+  "name": "graphql-memo",
+  "description": "Server-side caching for your GraphQL resolvers",
+  "homepage": "https://flesch.github.io/graphql-memo",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "author": {
+    "email": "john@fles.ch",
+    "name": "John Flesch",
+    "url": "https://fles.ch/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flesch/graphql-memo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/flesch/graphql-memo/issues"
+  },
+  "keywords": [
+    "cache",
+    "gql",
+    "gqlm",
+    "graphql",
+    "memo",
+    "memoization",
+    "memory",
+    "resolver",
+    "store"
+  ],
+  "dependencies": {
+    "object-hash": "^1.3.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "prettier": "^1.14.3"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "prepare": "npm run prettier && npm run build",
+    "prettier": "prettier --write \"**/*.{js,json,graphql}\""
+  },
+  "license": "MIT"
+}
